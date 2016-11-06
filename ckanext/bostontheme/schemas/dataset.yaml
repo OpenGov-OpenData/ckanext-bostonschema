@@ -175,6 +175,45 @@ dataset_fields:
   - label: No
     value: closed
 
+## "accrualPeriodicity"
+#  ISO8601FTW
+- field_name: accrual_periodicity
+  label: Accrual Periodicity
+  preset: select
+  choices:
+  - label: Continuously updated
+    value: R/PT1S
+  - label: Daily
+    value: R/P1D
+  - label: Three times a week
+    value: R/P0.33W
+  - label: Semiweekly
+    value: R/P3.5D
+  - label: Weekly
+    value: R/P1W
+  - label: Three times a month
+    value: R/P0.33M
+  - label: Biweekly
+    value: R/P2W
+  - label: Semimonthly
+    value: R/P0.5M
+  - label: Monthly
+    value: R/P1M
+  - label: Bimonthly
+    value: R/P2M
+  - label: Quarterly
+    value: R/P3M
+  - label: Three times a year
+    value: R/P4M
+  - label: Semiannual
+    value: R/P6M
+  - label: Annual
+    value: R/P1Y
+  - label: Biennial
+    value: R/P2Y
+  - label: Triennial
+    value: R/P3Y
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
