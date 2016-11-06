@@ -136,7 +136,22 @@ dataset_fields:
   # only show some government entities
   # FIXME: add form_restrict_choices_to to multiple_select snippet ?
 
-
+## "publisher"
+#  select from government entity list
+#  XXX: this might better map to owner_org. Need to confirm.
+- field_name: publisher
+  label: Publisher
+  preset: government_entity_choices
+  # copied from select preset because we're using preset for controlled list
+  form_snippet: select.html
+  display_snippet: select.html
+  validators: scheming_required scheming_choices
+  # only show some government entities
+  form_restrict_choices_to:
+  - water
+  - environment_energy
+  - inspectional
+  - innovation
 
 - field_name: tag_string
   label: Tags
