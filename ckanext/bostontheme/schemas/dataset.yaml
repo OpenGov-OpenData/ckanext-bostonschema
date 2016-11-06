@@ -214,6 +214,28 @@ dataset_fields:
   - label: Triennial
     value: R/P3Y
 
+## "identifier"
+#  Not including here. core "id" field is better than an auto-incrementing field
+
+## "temporalFrom"
+#  manually entered date
+- field_name: temporal_from
+  label: Temporal From
+  preset: date
+
+## "temporalTo"
+#  manually entered date
+- field_name: temporal_to
+  label: Temporal From
+  preset: date
+
+## "temporalNotes"
+#  simple text field in English
+- field_name: temporal_notes
+  label: Temporal Notes
+
+
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
