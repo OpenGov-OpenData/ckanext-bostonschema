@@ -315,6 +315,62 @@ dataset_fields:
   preset: tag_string_autocomplete
   form_placeholder: eg. economy, mental health, government
 
+## "contactPoint"
+#  select from government entity list
+- field_name: contact_point
+  label: Contact Point
+  preset: government_entity_choices
+  # copied from select preset because we're using preset for controlled list
+  form_snippet: select.html
+  display_snippet: select.html
+  validators: scheming_required scheming_choices
+  # only show some government entities
+  form_restrict_choices_to:
+  - bpda
+  - tax_policy
+  - "311"
+  - archives
+  - energy_manager
+  - data_literacy
+  - publicity
+  - fair_housing
+  - assessing
+  - gis
+  - property
+  - youth
+  - intergovernmental_relations
+  - environment
+  - economic_office
+  - emergency_management
+  - arts_office
+  - immigrant_advancement
+  - doit_data
+  - fire_operations
+  - real_estate
+  - hr
+  - consumer_asst
+  - neighborhood
+  - archaeology
+  - environment
+  - planning
+  - procurement
+  - parking
+  - library
+  - transportation
+  - water
+  - police
+  - veterans
+  - inspectional_publicity
+  - budget_admin
+  - doit_gis
+  - environment_manager
+  - inspectional
+  - ems
+  - innovation
+
+
+## "license" from "Distribution"
+#  CKAN's core license field is defined at the dataset level, not the distribution level
 - field_name: license_id
   label: License
   form_snippet: license.html

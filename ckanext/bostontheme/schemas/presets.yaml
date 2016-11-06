@@ -61,7 +61,7 @@ about_url: https://github.com/wardi/ckanext-bostontheme
     - label: Office of Human Resources
       value: hr
     - label: Assistant Director of Operations, Consumer Affairs and Licensing
-      value: asst_consumer
+      value: consumer_asst
     - label: Consumer Affairs & Licensing Department
       value: consumer
     - label: Neighborhood Services
