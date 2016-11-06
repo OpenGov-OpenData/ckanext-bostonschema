@@ -236,8 +236,8 @@ dataset_fields:
 
 ## "theme"
 #  Simple flat version of topics from Knack
-- field_name: btype
-  label: Type
+- field_name: theme
+  label: Theme
   preset: multiple_checkbox
   choices:
   - label: Archives
@@ -291,9 +291,28 @@ dataset_fields:
   - label: City services
     value: city_services
 
+## "spatial"
+#  CKAN's core "spatial" field is a GEOJSON string, use alternate name
+- field_name: location
+  label: Location
+  preset: multiple_checkbox
+  choices:
+  - label: Downtown Boston
+    value: downtown
+  - label: North End
+    value: north
+  - label: South Boston
+    value: south
+  - label: East Boston
+    value: east
+  - label: Boston (all)
+    value: all
 
+
+## "keywords"
+#  use core CKAN free-form tag field
 - field_name: tag_string
-  label: Tags
+  label: Keywords
   preset: tag_string_autocomplete
   form_placeholder: eg. economy, mental health, government
 
