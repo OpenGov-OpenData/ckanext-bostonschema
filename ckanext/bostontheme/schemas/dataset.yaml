@@ -368,7 +368,6 @@ dataset_fields:
   - ems
   - innovation
 
-
 ## "license" from "Distribution"
 #  CKAN's core license field is defined at the dataset level, not the distribution level
 - field_name: license_id
@@ -420,21 +419,36 @@ dataset_fields:
 #  display_email_name_field: maintainer
 
 
-
+## "Distribution" fields
 resource_fields:
 
 - field_name: url
   label: URL
   preset: resource_url_upload
 
+## "title"
+#  core CKAN resource field "name"
 - field_name: name
-  label: Name
+  label: Title
   form_placeholder: eg. January 2011 Gold Prices
 
+## "description"
+#  core CKAN field
 - field_name: description
   label: Description
   form_snippet: markdown.html
   form_placeholder: Some useful notes about the data
+
+## "language"
+#  select all that apply XXX: add zxx "no linguistic information"?
+- field_name: language
+  label: Language
+  preset: multiple_checkbox
+  choices:
+  - label: English
+    value: en
+  - label: Spanish
+    value: es
 
 - field_name: format
   label: Format
