@@ -164,6 +164,17 @@ dataset_fields:
   - label: Public Record
     value: public
 
+## "open"
+#  XXX: is this the field that determines if the record will be published?
+- field_name: open
+  label: Open
+  preset: select
+  choices:
+  - label: Yes
+    value: open
+  - label: No
+    value: closed
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
