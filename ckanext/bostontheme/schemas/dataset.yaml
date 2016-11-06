@@ -153,6 +153,17 @@ dataset_fields:
   - inspectional
   - innovation
 
+## "classification"
+#  Exempt/Public
+- field_name: classification
+  label: Classification
+  preset: select
+  choices:
+  - label: Exempt Record
+    value: exempt
+  - label: Public Record
+    value: public
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
