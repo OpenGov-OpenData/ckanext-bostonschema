@@ -54,7 +54,6 @@ dataset_fields:
   - label: Tabular
     value: tabular
 
-
 ## "description"
 #  core CKAN field, in English
 #  suggest using notes_translated if we need multiple language support
@@ -62,6 +61,22 @@ dataset_fields:
   label: Description
   form_snippet: markdown.html
   form_placeholder: eg. Some useful notes about the data
+
+## "released"
+#  manually entered date
+- field_name: released
+  label: Released
+  preset: date
+
+## "modified"
+#  manually entered date (not the automatic metadata modified)
+- field_name: modified
+  label: Modified
+  preset: date
+
+## "language"
+#  Not including here. Language per-metadata field (ckanext-fluent)
+#  is better if translations are available 
 
 ##
 - field_name: tag_string

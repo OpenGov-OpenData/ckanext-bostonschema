@@ -10,6 +10,7 @@ class CustomTheme(SingletonPlugin):
 
         config['scheming.presets'] = """
 ckanext.scheming:presets.json
+ckanext.bostontheme:schemas/presets.yaml
 """
         config['scheming.dataset_schemas'] = """
 ckanext.bostontheme:schemas/dataset.yaml

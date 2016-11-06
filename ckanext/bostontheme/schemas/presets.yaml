@@ -1,0 +1,143 @@
+scheming_presets_version: 1
+
+about: Scheming presets for City of Boston's (CoB) Data Model
+about_url: https://github.com/wardi/ckanext-bostontheme
+
+# Government Entity choice list used in a number of dataset fields.
+# simple lists here as a first approximation, we can build
+# code to import or manage the relations from Knack if required:
+#  * Government Entity [64]
+#    * Provider [32]
+#    * Publisher [4]
+#    * Contact [41]
+#    * Source [30]
+- preset_name: government_entity_choices
+  values:
+    choices: 
+    - label: BPDA Management Information Systems
+      value: bpda
+    - label: Director of Tax Policy & Communications
+      value: tax_policy
+    - label: Boston 311
+      value: "311"
+    - label: Archives and Records Management
+      value: archives
+    - label: City Clerk
+      value: clerk
+    - label: Energy Manager, Environment Department
+      value: energy_manager
+    - label: Data Literacy Librarian, Boston Open Data
+      value: data_literacy
+    - label: Director of Publicity, ISD
+      value: publicity
+    - label: Fair Housing & Equity
+      value: fair_housing
+    - label: Assessing Department
+      value: assessing
+    - label: GIS Team
+      value: gis
+    - label: Property Management
+      value: property
+    - label: Boston Centers for Youth and Families
+      value: youth
+    - label: Intergovernmental Relations
+      value: intergovernmental_relations
+    - label: Office of Economic Development
+      value: economic_office
+    - label: Mayor's Office of Emergency Management Services
+      value: emergency_management
+    - label: Office of Arts & Culture
+      value: arts_office
+    - label: Mayor's Office for Immigrant Advancement
+      value: immigrant_advancement
+    - label: DoIT Data & Analytics
+      value: doit_data
+    - label: Deputy Director, Real Estate Management and Sales
+      value: real_estate
+    - label: Department of Neighborhood Development
+      value: neighborhood_development
+    - label: Housing & Neighborhood Development
+      value: housing
+    - label: Office of Human Resources
+      value: hr
+    - label: Assistant Director of Operations, Consumer Affairs and Licensing
+      value: asst_consumer
+    - label: Consumer Affairs & Licensing Department
+      value: consumer
+    - label: Neighborhood Services
+      value: neighborhood
+    - label: City of Boston Archaeology Program
+      value: archaeology
+    - label: Boston Planning & Development Agency
+      value: planning
+    - label: Manager, Procurement Systems
+      value: procurement
+    - label: Purchasing Division
+      value: purchasing
+    - label: Office of the Parking Clerk
+      value: parking
+    - label: Boston Public Library
+      value: library
+    - label: Arts & Culture
+      value: arts
+    - label: Boston Transportation Department
+      value: transportation
+    - label: Boston Public Schools
+      value: schools
+    - label: Boston Water and Sewer Commission
+      value: water
+    - label: Boston Police Department
+      value: police
+    - label: Veterans Services
+      value: veterans
+    - label: Director of Publicity, Inspectional Services Department
+      value: inspectional_publicity
+    - label: System Administrator, Office of Budget Management
+      value: budget_admin
+    - label: Office of Budget Management
+      value: budget
+    - label: Administration & Finance
+      value: finance
+    - label: Office/Finance Manager, City of Boston Environment
+      value: environment_manager
+    - label: Manager, DoIT GIS Team
+      value: doit_gis
+    - label: Information and Technology Cabinet
+      value: it_cabinet
+    - label: Environment Department
+      value: environment
+    - label: Senior Systems and Network Operations Specialist, Boston Fire Department
+      value: fire_operations
+    - label: Boston Fire Department
+      value: fire
+    - label: Boston Public Health Commission
+      value: health_commission
+    - label: Boston EMS
+      value: ems
+    - label: Non-mayoral departments
+      value: non_mayoral
+    - label: Streets, transportation, and sanitation
+      value: streets
+    - label: Public safety
+      value: safety
+    - label: Health and human services
+      value: health
+    - label: Education
+      value: education
+    - label: Economic Development
+      value: economic
+    - label: Civic engagement
+      value: civic_engagement
+    - label: Operations
+      value: operations
+    - label: Department of Innovation and Technology
+      value: innovation
+    - label: Inspectional services department
+      value: inspectional
+    - label: Mayor
+      value: mayor
+    - label: Environment, energy, and open space
+      value: environment_energy
+
+
+    
