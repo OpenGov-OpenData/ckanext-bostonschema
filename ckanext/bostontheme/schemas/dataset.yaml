@@ -234,6 +234,62 @@ dataset_fields:
 - field_name: temporal_notes
   label: Temporal Notes
 
+## "theme"
+#  Simple flat version of topics from Knack
+- field_name: btype
+  label: Type
+  preset: multiple_checkbox
+  choices:
+  - label: Archives
+    value: archives
+  - label: Fair housing
+    value: fair_housing
+  - label: Property Assessment
+    value: property_assessment
+  - label: Intergovernmental Relations
+    value: intergovernmental_relations
+  - label: Operations
+    value: operations
+  - label:
+      en: Immigrant Services
+      es: Servicio de Inmigracion
+    value: immigrant_services
+  - label: Performance
+    value: performance
+  - label: Housing
+    value: housing
+  - label: Preservation
+    value: preservation
+  - label: Archaeology
+    value: archaeology
+  - label: Environment
+    value: environment
+  - label: Economic Development
+    value: economic_development
+  - label: Parking
+    value: parking
+  - label: Arts and Culture
+    value: arts_and_culture
+  - label: Public Works
+    value: public_works
+  - label: Subway
+    value: subway
+  - label:
+      en: Transportation
+      es: Transporte publico
+    value: transportation
+  - label: Public safety
+    value: public_safety
+  - label: Permitting
+    value: permitting
+  - label: Health
+    value: health
+  - label: Finance
+    value: finance
+  - label: Facilities
+    value: facilities
+  - label: City services
+    value: city_services
 
 
 - field_name: tag_string
