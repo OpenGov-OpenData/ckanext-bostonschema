@@ -2,6 +2,7 @@ scheming_presets_version: 1
 
 about: Scheming presets for City of Boston's (CoB) Data Model
 about_url: https://github.com/wardi/ckanext-bostontheme
+presets:
 
 # Government Entity choice list used in a number of dataset fields.
 # simple lists here as a first approximation, we can build

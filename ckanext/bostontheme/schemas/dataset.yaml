@@ -170,9 +170,9 @@ dataset_fields:
   label: Open
   preset: select
   choices:
-  - label: Yes
+  - label: "Yes"
     value: open
-  - label: No
+  - label: "No"
     value: closed
 
 ## "accrualPeriodicity"
