@@ -1,24 +1,69 @@
 scheming_version: 1
 dataset_type: dataset
-about: A reimplementation of the default CKAN dataset schema
-about_url: http://github.com/ckan/ckanext-scheming
+about: City of Boston's (CoB) Data Model
+about_url: https://github.com/wardi/ckanext-bostontheme
+
+## "Field name from knack"
+#  comments on implementation
+
+
 dataset_fields:
 
+## "uniqueId"
+#  maps to CKAN's core field "id", a UUID generated when the
+#  dataset is created. Not included in this file unless we
+#  need to override something.
+
+## "title"
+#  CKAN's core title field, in English
+#  suggest using title_translated if we need multiple language support
 - field_name: title
   label: Title
   preset: title
   form_placeholder: eg. A descriptive title
 
+#  core CKAN field used for dataset URL slug
+#  generated from title above with JS
 - field_name: name
   label: URL
   preset: dataset_slug
   form_placeholder: eg. my-dataset
 
+## "type"
+#  "Dataset Type" heavily overloaded in CKAN so naming this field "btype"
+- field_name: btype
+  label: Type
+  preset: multiple_checkbox
+  choices:
+  - label: Audio
+    value: audio
+  - label: Image
+    value: image
+  - label: Charts
+    value: charts
+  - label: Map
+    value: map
+  - label: Calendar
+    value: calendar
+  - label: Forms
+    value: forms
+  - label: External
+    value: external
+  - label: Files and documents
+    value: files_and_documents
+  - label: Tabular
+    value: tabular
+
+
+## "description"
+#  core CKAN field, in English
+#  suggest using notes_translated if we need multiple language support
 - field_name: notes
   label: Description
   form_snippet: markdown.html
   form_placeholder: eg. Some useful notes about the data
 
+##
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
