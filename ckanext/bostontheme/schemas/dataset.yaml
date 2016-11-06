@@ -78,7 +78,51 @@ dataset_fields:
 #  Not including here. Language per-metadata field (ckanext-fluent)
 #  is better if translations are available 
 
-##
+## "provider"
+#  select from government entity list
+- field_name: provider
+  label: Provider
+  preset: government_entity_choices
+  # copied from select preset because we're using preset for controlled list
+  form_snippet: select.html
+  display_snippet: select.html
+  validators: scheming_required scheming_choices
+  # only show some government entities
+  form_restrict_choices_to:
+  - "311"
+  - archives
+  - fair_housing
+  - assessing
+  - gis
+  - property
+  - youth
+  - intergovernmental_relations
+  - environment
+  - economic
+  - emergency_management
+  - arts_office
+  - immigrant_advancement
+  - doit_data
+  - fire
+  - neighborhood_development
+  - hr
+  - consumer
+  - neighborhood
+  - archaeology
+  - planning
+  - purchasing
+  - parking
+  - library
+  - transportation
+  - water
+  - police
+  - veterans
+  - budget
+  - ems
+  - innovation
+  - inspectional
+
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
