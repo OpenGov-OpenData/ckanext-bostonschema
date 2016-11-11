@@ -10,6 +10,7 @@ class BostonSchema(SingletonPlugin):
 
         config['scheming.presets'] = """
 ckanext.scheming:presets.json
+ckanext.fluent:presets.json
 ckanext.bostonschema:schemas/presets.yaml
 """
         config['scheming.dataset_schemas'] = """
