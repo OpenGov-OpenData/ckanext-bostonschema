@@ -3,6 +3,10 @@ dataset_type: dataset
 about: City of Boston's (CoB) Data Model
 about_url: https://github.com/wardi/ckanext-bostontheme
 
+# For now we're only showing English fluent fields
+form_languages:
+- en
+
 ## "Field name from knack"
 #  comments on implementation
 
