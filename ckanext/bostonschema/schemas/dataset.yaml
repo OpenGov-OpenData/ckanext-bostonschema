@@ -232,7 +232,7 @@ dataset_fields:
 ## "temporalTo"
 #  manually entered date
 - field_name: temporal_to
-  label: Temporal From
+  label: Temporal To
   preset: date
 
 ## "temporalNotes"
