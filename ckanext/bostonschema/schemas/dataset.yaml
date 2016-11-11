@@ -433,15 +433,17 @@ resource_fields:
 
 ## "title"
 #  core CKAN resource field "name"
-- field_name: name
+- field_name: name_translated
   label: Title
+  preset: fluent_text
   form_placeholder: eg. January 2011 Gold Prices
 
 ## "description"
 #  core CKAN field
-- field_name: description
+- field_name: description_translated
   label: Description
-  form_snippet: markdown.html
+  preset: fluent_markdown
+  output_validators: fluent_core_translated_output
   form_placeholder: Some useful notes about the data
 
 ## "language"
