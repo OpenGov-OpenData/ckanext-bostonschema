@@ -4,6 +4,7 @@ about: City of Boston's (CoB) Data Model
 about_url: https://github.com/wardi/ckanext-bostontheme
 
 # For now we're only showing English fluent fields
+# other languages will be shown if present in metadata
 form_languages:
 - en
 
@@ -19,11 +20,10 @@ dataset_fields:
 #  need to override something.
 
 ## "title"
-#  CKAN's core title field, in English
-#  suggest using title_translated if we need multiple language support
-- field_name: title
+#  CKAN's core title field
+- field_name: title_translated
   label: Title
-  preset: title
+  preset: fluent_core_translated
   form_placeholder: eg. A descriptive title
 
 #  core CKAN field used for dataset URL slug
@@ -59,11 +59,11 @@ dataset_fields:
     value: tabular
 
 ## "description"
-#  core CKAN field, in English
-#  suggest using notes_translated if we need multiple language support
-- field_name: notes
+#  core CKAN field
+- field_name: notes_translated
   label: Description
-  form_snippet: markdown.html
+  preset: fluent_markdown
+  output_validators: fluent_core_translated_output
   form_placeholder: eg. Some useful notes about the data
 
 ## "released"
@@ -234,9 +234,10 @@ dataset_fields:
   preset: date
 
 ## "temporalNotes"
-#  simple text field in English
+#  fluent text field
 - field_name: temporal_notes
   label: Temporal Notes
+  preset: fluent_text
 
 ## "theme"
 #  Simple flat version of topics from Knack
