@@ -26,6 +26,7 @@ dataset_fields:
   preset: fluent_core_translated
   form_attrs:
     data-module: slug-preview-target
+  required: True
   form_placeholder: eg. A descriptive title
 
 #  core CKAN field used for dataset URL slug
