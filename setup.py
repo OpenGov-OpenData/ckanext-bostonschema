@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name='ckanext-bostontheme',
+    name='ckanext-bostonschema',
     version='0.1',
     description='',
     license='AGPL3',
@@ -10,10 +10,10 @@ setup(
     author_email='',
     url='',
     namespace_packages=['ckanext'],
-    packages=['ckanext.bostontheme'],
+    packages=['ckanext.bostonschema'],
     zip_safe=False,
     entry_points = """
         [ckan.plugins]
-        boston_theme = ckanext.bostontheme.plugins:CustomTheme
+        boston_schema = ckanext.bostonschema.plugins:BostonSchema
     """
 )

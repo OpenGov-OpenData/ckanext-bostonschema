@@ -1,7 +1,7 @@
 
 from ckan.plugins import toolkit, IConfigurer, SingletonPlugin, implements
 
-class CustomTheme(SingletonPlugin):
+class BostonSchema(SingletonPlugin):
     implements(IConfigurer)
 
     def update_config(self, config):
@@ -10,9 +10,9 @@ class CustomTheme(SingletonPlugin):
 
         config['scheming.presets'] = """
 ckanext.scheming:presets.json
-ckanext.bostontheme:schemas/presets.yaml
+ckanext.bostonschema:schemas/presets.yaml
 """
         config['scheming.dataset_schemas'] = """
-ckanext.bostontheme:schemas/dataset.yaml
+ckanext.bostonschema:schemas/dataset.yaml
 """
 
