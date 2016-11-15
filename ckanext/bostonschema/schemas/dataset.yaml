@@ -96,38 +96,38 @@ dataset_fields:
   validators: scheming_required scheming_choices
   # only show some government entities
   form_restrict_choices_to:
-  - "311"
   - archives
-  - fair_housing
   - assessing
-  - gis
-  - property
+  - "311"
   - youth
-  - intergovernmental_relations
-  - environment
-  - economic
-  - emergency_management
-  - arts_office
-  - immigrant_advancement
-  - doit_data
+  - ems
   - fire
-  - neighborhood_development
-  - hr
-  - consumer
-  - neighborhood
-  - archaeology
   - planning
-  - purchasing
-  - parking
+  - police
   - library
   - transportation
   - water
-  - police
-  - veterans
-  - budget
-  - ems
+  - archaeology
+  - consumer
   - innovation
+  - neighborhood_development
+  - doit_data
+  - economic
+  - environment
+  - fair_housing
+  - gis
   - inspectional
+  - intergovernmental_relations
+  - immigrant_advancement
+  - emergency_management
+  - neighborhood
+  - arts_office
+  - budget
+  - hr
+  - parking
+  - property
+  - purchasing
+  - veterans
 
 ## "source"
 #  multiple select from government entiy list
@@ -136,7 +136,7 @@ dataset_fields:
   preset: government_entity_choices
   # copied from multiple_select preset because we're using preset for
   # controlled list
-  form_snippet: multiple_select.html
+  form_snippet: source_select.html
   display_snippet: multiple_choice.html
   validators: scheming_multiple_choice
   output_validators: scheming_multiple_choice_output
@@ -248,36 +248,48 @@ dataset_fields:
   label: Theme
   preset: multiple_checkbox
   choices:
+  - label: Archaeology
+    value: archaeology
   - label: Archives
     value: archives
+  - label: Arts and Culture
+    value: arts_and_culture
+  - label: City services
+    value: city_services
+  - label: Economic Development
+    value: economic_development
+  - label: Environment
+    value: environment
+  - label: Facilities
+    value: facilities
   - label: Fair housing
     value: fair_housing
-  - label: Property Assessment
-    value: property_assessment
-  - label: Intergovernmental Relations
-    value: intergovernmental_relations
-  - label: Operations
-    value: operations
+  - label: Finance
+    value: finance
+  - label: Health
+    value: health
+  - label: Housing
+    value: housing
   - label:
       en: Immigrant Services
       es: Servicio de Inmigracion
     value: immigrant_services
-  - label: Performance
-    value: performance
-  - label: Housing
-    value: housing
-  - label: Preservation
-    value: preservation
-  - label: Archaeology
-    value: archaeology
-  - label: Environment
-    value: environment
-  - label: Economic Development
-    value: economic_development
+  - label: Intergovernmental Relations
+    value: intergovernmental_relations
+  - label: Operations
+    value: operations
   - label: Parking
     value: parking
-  - label: Arts and Culture
-    value: arts_and_culture
+  - label: Performance
+    value: performance
+  - label: Permitting
+    value: permitting
+  - label: Preservation
+    value: preservation
+  - label: Property Assessment
+    value: property_assessment
+  - label: Public safety
+    value: public_safety
   - label: Public Works
     value: public_works
   - label: Subway
@@ -286,18 +298,6 @@ dataset_fields:
       en: Transportation
       es: Transporte publico
     value: transportation
-  - label: Public safety
-    value: public_safety
-  - label: Permitting
-    value: permitting
-  - label: Health
-    value: health
-  - label: Finance
-    value: finance
-  - label: Facilities
-    value: facilities
-  - label: City services
-    value: city_services
 
 ## "spatial"
 #  CKAN's core "spatial" field is a GEOJSON string, use alternate name
@@ -305,16 +305,16 @@ dataset_fields:
   label: Location
   preset: multiple_checkbox
   choices:
+  - label: Boston (all)
+    value: all
   - label: Downtown Boston
     value: downtown
+  - label: East Boston
+    value: east
   - label: North End
     value: north
   - label: South Boston
     value: south
-  - label: East Boston
-    value: east
-  - label: Boston (all)
-    value: all
 
 ## "keywords"
 #  use core CKAN free-form tag field
@@ -334,47 +334,46 @@ dataset_fields:
   validators: scheming_required scheming_choices
   # only show some government entities
   form_restrict_choices_to:
-  - bpda
-  - tax_policy
-  - "311"
   - archives
-  - energy_manager
-  - data_literacy
-  - publicity
-  - fair_housing
   - assessing
-  - gis
-  - property
-  - youth
-  - intergovernmental_relations
-  - environment
-  - economic_office
-  - emergency_management
-  - arts_office
-  - immigrant_advancement
-  - doit_data
-  - fire_operations
-  - real_estate
-  - hr
   - consumer_asst
-  - neighborhood
-  - archaeology
-  - environment
+  - "311"
+  - youth
+  - ems
   - planning
-  - procurement
-  - parking
+  - police
   - library
   - transportation
   - water
-  - police
-  - veterans
-  - inspectional_publicity
-  - budget_admin
-  - doit_gis
-  - environment_manager
-  - inspectional
-  - ems
+  - bpda
+  - archaeology
+  - data_literacy
   - innovation
+  - real_estate
+  - inspectional_publicity
+  - publicity
+  - tax_policy
+  - doit_data
+  - energy_manager
+  - environment
+  - fair_housing
+  - gis
+  - inspectional
+  - intergovernmental_relations
+  - doit_gis
+  - procurement
+  - immigrant_advancement
+  - emergency_management
+  - neighborhood
+  - environment_manager
+  - arts_office
+  - economic_office
+  - hr
+  - parking
+  - property
+  - fire_operations
+  - budget_admin
+  - veterans
 
 ## "license" from "Distribution"
 #  CKAN's core license field is defined at the dataset level, not the distribution level
