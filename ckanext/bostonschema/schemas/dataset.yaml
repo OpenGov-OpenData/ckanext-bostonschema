@@ -145,20 +145,24 @@ dataset_fields:
 
 ## "publisher"
 #  select from government entity list
-#  XXX: this might better map to owner_org. Need to confirm.
-- field_name: publisher
+- field_name: owner_org
   label: Publisher
-  preset: government_entity_choices
-  # copied from select preset because we're using preset for controlled list
-  form_snippet: select.html
-  display_snippet: select.html
-  validators: scheming_required scheming_choices
-  # only show some government entities
-  form_restrict_choices_to:
-  - water
-  - environment_energy
-  - inspectional
-  - innovation
+  preset: dataset_organization
+
+# publisher is now mapped to owner_org.
+#- field_name: publisher
+#  label: Publisher
+#  preset: government_entity_choices
+#  # copied from select preset because we're using preset for controlled list
+#  form_snippet: select.html
+#  display_snippet: select.html
+#  validators: scheming_required scheming_choices
+#  # only show some government entities
+#  form_restrict_choices_to:
+#  - water
+#  - environment_energy
+#  - inspectional
+#  - innovation
 
 ## "classification"
 #  Exempt/Public
