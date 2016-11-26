@@ -1,8 +1,11 @@
+from ckanext.bostonschema import helpers
 
-from ckan.plugins import toolkit, IConfigurer, SingletonPlugin, implements
+from ckan.plugins import (toolkit, IConfigurer, SingletonPlugin, implements,
+    ITemplateHelpers)
 
 class BostonSchema(SingletonPlugin):
     implements(IConfigurer)
+    implements(ITemplateHelpers)
 
     def update_config(self, config):
         toolkit.add_template_directory(config, "templates")
@@ -17,3 +20,5 @@ ckanext.bostonschema:schemas/presets.yaml
 ckanext.bostonschema:schemas/dataset.yaml
 """
 
+    def get_helpers(self):
+        return {'nonsysadmin_user_choices': helpers.nonsysadmin_user_choices}
