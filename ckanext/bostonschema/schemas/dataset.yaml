@@ -435,6 +435,7 @@ dataset_fields:
   label: View Permissions
   preset: multiple_select
   choices_helper: nonsysadmin_user_choices
+  display_snippet: null
 
 
 ## "Distribution" fields
