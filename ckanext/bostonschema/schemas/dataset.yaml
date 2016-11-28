@@ -133,7 +133,7 @@ dataset_fields:
 #  multiple select from government entiy list
 - field_name: source
   label: Source
-  preset: government_entity_choices
+  preset: source_choices
   # copied from multiple_select preset because we're using preset for
   # controlled list
   form_snippet: source_select.html
@@ -189,7 +189,7 @@ dataset_fields:
 ## "accrualPeriodicity"
 #  ISO8601FTW
 - field_name: accrual_periodicity
-  label: Accrual Periodicity
+  label: Update frequency
   preset: select
   choices:
   - label: Continuously updated
@@ -231,19 +231,19 @@ dataset_fields:
 ## "temporalFrom"
 #  manually entered date
 - field_name: temporal_from
-  label: Temporal From
+  label: Temporal from
   preset: date
 
 ## "temporalTo"
 #  manually entered date
 - field_name: temporal_to
-  label: Temporal To
+  label: Temporal to
   preset: date
 
 ## "temporalNotes"
 #  fluent text field
 - field_name: temporal_notes
-  label: Temporal Notes
+  label: Temporal notes
   preset: fluent_text
 
 ## "theme"
@@ -330,7 +330,7 @@ dataset_fields:
 ## "contactPoint"
 #  select from government entity list
 - field_name: contact_point
-  label: Contact Point
+  label: Contact point
   preset: government_entity_choices
   # copied from select preset because we're using preset for controlled list
   form_snippet: select.html
@@ -379,6 +379,15 @@ dataset_fields:
   - budget_admin
   - veterans
 
+## "contactPointEmail"
+- field_name: contact_point_email
+  label: Contact point email
+  display_snippet: email.html
+
+## "contactPointPhone"
+- field_name: contact_point_phone
+  label: Contact point phone number
+
 ## "license" from "Distribution"
 #  CKAN's core license field is defined at the dataset level, not the distribution level
 - field_name: license_id
@@ -393,7 +402,7 @@ dataset_fields:
 ## "landingPage"
 #  use core CKAN datase url field
 - field_name: url
-  label: Landing Page
+  label: Landing page
   form_placeholder: http://example.com/dataset.json
   display_property: foaf:homepage
   display_snippet: link.html
@@ -409,7 +418,7 @@ dataset_fields:
 #  display_property: dc:creator
 
 #- field_name: author_email
-#  label: Author Email
+#  label: Author email
 #  form_placeholder: joe@example.com
 #  display_property: dc:creator
 #  display_snippet: email.html
@@ -417,13 +426,13 @@ dataset_fields:
 
 ## "dataCoordinator"
 #  use core CKAN maintainer field for name of data coordinator
-- field_name: maintainer
-  label: Data Coordinator
-  form_placeholder: Joe Bloggs
-  display_property: dc:contributor
+#- field_name: maintainer
+#  label: Data coordinator
+#  form_placeholder: Joe Bloggs
+#  display_property: dc:contributor
 
 #- field_name: maintainer_email
-#  label: Maintainer Email
+#  label: Maintainer email
 #  form_placeholder: joe@example.com
 #  display_property: dc:contributor
 #  display_snippet: email.html
@@ -466,3 +475,8 @@ resource_fields:
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
+
+## "Access URL"
+- field_name: access_url
+  label: Access URL
+  display_snippet: link.html

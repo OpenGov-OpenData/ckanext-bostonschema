@@ -14,7 +14,7 @@ presets:
 #    * Source [30]
 - preset_name: government_entity_choices
   values:
-    choices: 
+    choices:
     - label: Administration & Finance
       value: finance
     - label: Archives and Records Management
@@ -140,3 +140,56 @@ presets:
     - label: Veterans Services
       value: veterans
 
+- preset_name: source_choices
+  values:
+    choices:
+    - label: Airport Statistics, Massport
+      value: airport_statistics
+    - label: ArcGIS REST Services
+      value: arcgis_rest
+    - label: Boston EMS electronic patient care report system
+      value: ems_patient_care_report_system
+    - label: Boston Police Department Crime Statistics Feed
+      value: police_crime_stats_feed
+    - label: Boston Public Library enterprise integrated library system (ILS)
+      value: integrated_library_system
+    - label: Bostracks Enfocus
+      value: bostracks_enfocus
+    - label: BPDA (Boston Planning & Development Agency) contract compliance database
+      value: bpda_contract_compliance_db
+    - label: BPDA (Contract
+      value: bpda_contract
+    - label: BRA pipeline database
+      value: bra_pipeline_db
+    - label: City Clerk documents and assigned docket numbers
+      value: city_clerk_documents
+    - label: City Constituent Relationship Management (CRM) System
+      value: constituent_relationship_management_system
+    - label: City of Boston document management system
+      value: document_management_system
+    - label: City of Boston Enterprise Resource Planning System, Financials
+      value: resource_planning_system_financials
+    - label: City of Boston Enterprise Resource Planning System, Human Capital Management (HCM)
+      value: resource_planning_system_human_capital
+    - label: City of Boston Voice over IP (VOIP) System
+      value: voip_system
+    - label: City wide Budgeting and Forecasting Application
+      value: budgeting_and_forecasting_app
+    - label: City wide Enterprise Energy Management System
+      value: energy_management_system
+    - label: City wide Enterprise Permitting and Licensing Software
+      value: permitting_and_licensing_software
+    - label: Computer aided dispatch system (CAD)
+      value: computer_aided_dispatch_system
+    - label: Department of Neighborhood Development Data Server
+      value: neighborhood_development_server
+    - label: ENERGY STAR Portfolio Manager®
+      value: energy_star_portfolio_manager
+    - label: Internal
+      value: internal
+    - label: IPS Data Management System (DMS)
+      value: ips_data_management_system
+    - label: Labor Market Information, The Official Website of the Executive Office of Labor and Workforce Development (EOLWD)
+      value: labor_market_info
+    - label: Massachusetts Artifact Tracking System (MATS)
+      value: massachusetts_artifact_tracking_system
