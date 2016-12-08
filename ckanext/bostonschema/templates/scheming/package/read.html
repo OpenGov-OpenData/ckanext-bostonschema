@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{% block package_notes %}
+  {% if pkg.notes_translated %}
+    <div class="notes embedded-content">
+      {{ h.render_markdown(h.scheming_language_text(pkg.notes_translated)) }}
+    </div>
+  {% elif pkg.notes %}
+    <div class="notes embedded-content">
+      {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
+    </div>
+  {% endif %}
+{% endblock %}
