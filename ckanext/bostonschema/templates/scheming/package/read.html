@@ -10,4 +10,14 @@
       {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
     </div>
   {% endif %}
+
+  {% set view = h.get_canonical_resource_view(pkg.id) %}
+  {% if view %}
+    {% snippet 'package/snippets/resource_view.html',
+        resource_view = view['resource_view'],
+        resource = view['resource'],
+        package = pkg
+    %}
+  {% endif %}
 {% endblock %}
+

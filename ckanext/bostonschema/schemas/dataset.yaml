@@ -94,40 +94,41 @@ dataset_fields:
   form_snippet: select.html
   display_snippet: select.html
   validators: scheming_required scheming_choices
+  required: True
   # only show some government entities
   form_restrict_choices_to:
-  - archives
-  - assessing
-  - "311"
-  - youth
-  - ems
-  - fire
-  - planning
-  - police
-  - library
-  - transportation
-  - water
-  - archaeology
-  - consumer
-  - innovation
-  - neighborhood_development
-  - doit_data
-  - economic
-  - environment
-  - fair_housing
-  - gis
-  - inspectional
-  - intergovernmental_relations
-  - immigrant_advancement
-  - emergency_management
-  - neighborhood
-  - arts_office
-  - budget
-  - hr
-  - parking
-  - property
-  - purchasing
-  - veterans
+  - Department of Innovation and Technology
+  - Archives and Records Management
+  - Assessing Department
+  - Boston 311
+  - Boston Centers for Youth and Families
+  - Boston EMS
+  - Boston Fire Department
+  - Boston Planning and Development Agency
+  - Boston Police Department
+  - Boston Public Library
+  - Boston Transportation Department
+  - Boston Water and Sewer Commission
+  - City of Boston Archaeology Program
+  - Consumer Affairs and Licensing Department
+  - Department of Neighborhood Development
+  - DoIT Data and Analytics
+  - Economic Development
+  - Environment Department
+  - Fair Housing and Equity
+  - GIS Team
+  - Inspectional Services Department
+  - Intergovernmental Relations
+  - Mayor's Office for Immigrant Advancement
+  - Mayor's Office of Emergency Management Services
+  - Neighborhood Services
+  - Office of Arts and Culture
+  - Office of Budget Management
+  - Office of Human Resources
+  - Office of the Parking Clerk
+  - Property Management
+  - Purchasing Division
+  - Veterans Services
 
 ## "source"
 #  multiple select from government entiy list
@@ -336,53 +337,54 @@ dataset_fields:
   form_snippet: select.html
   display_snippet: select.html
   validators: scheming_required scheming_choices
+  required: True
   # only show some government entities
   form_restrict_choices_to:
-  - archives
-  - assessing
-  - consumer_asst
-  - "311"
-  - youth
-  - ems
-  - planning
-  - police
-  - library
-  - transportation
-  - water
-  - bpda
-  - archaeology
-  - data_literacy
-  - innovation
-  - real_estate
-  - inspectional_publicity
-  - publicity
-  - tax_policy
-  - doit_data
-  - energy_manager
-  - environment
-  - fair_housing
-  - gis
-  - inspectional
-  - intergovernmental_relations
-  - doit_gis
-  - procurement
-  - immigrant_advancement
-  - emergency_management
-  - neighborhood
-  - environment_manager
-  - arts_office
-  - economic_office
-  - hr
-  - parking
-  - property
-  - fire_operations
-  - budget_admin
-  - veterans
+  - Department of Innovation and Technology
+  - Archives and Records Management
+  - Assessing Department
+  - Assistant Director of Operations, Consumer Affairs and Licensing
+  - Boston 311
+  - Boston Centers for Youth and Families
+  - Boston EMS
+  - Boston Planning and Development Agency
+  - Boston Police Department
+  - Boston Public Library
+  - Boston Transportation Department
+  - Boston Water and Sewer Commission
+  - BPDA Management Information Systems
+  - City of Boston Archaeology Program
+  - Data Literacy Librarian, Boston Open Data
+  - Deputy Director, Real Estate Management and Sales
+  - Director of Publicity, Inspectional Services Department
+  - Director of Tax Policy and Communications
+  - DoIT Data and Analytics
+  - Energy Manager, Environment Department
+  - Environment Department
+  - Fair Housing and Equity
+  - GIS Team
+  - Inspectional Services Department
+  - Intergovernmental Relations
+  - Manager, DoIT GIS Team
+  - Manager, Procurement Systems
+  - Mayor's Office for Immigrant Advancement
+  - Mayor's Office of Emergency Management Services
+  - Neighborhood Services
+  - Office/Finance Manager, City of Boston Environment
+  - Office of Arts and Culture
+  - Office of Economic Development
+  - Office of Human Resources
+  - Office of the Parking Clerk
+  - Property Management
+  - Senior Systems and Network Operations Specialist, Boston Fire Department
+  - System Administrator, Office of Budget Management
+  - Veterans Services
 
 ## "contactPointEmail"
 - field_name: contact_point_email
   label: Contact point email
   display_snippet: email.html
+  required: True
 
 ## "contactPointPhone"
 - field_name: contact_point_phone
@@ -438,6 +440,8 @@ dataset_fields:
 #  display_snippet: email.html
 #  display_email_name_field: maintainer
 
+- field_name: icon_url
+  label: Icon URL
 
 ## "Distribution" fields
 resource_fields:

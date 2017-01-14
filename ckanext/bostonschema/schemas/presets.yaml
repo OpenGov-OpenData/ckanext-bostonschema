@@ -15,181 +15,179 @@ presets:
 - preset_name: government_entity_choices
   values:
     choices:
-    - label: Administration & Finance
-      value: finance
-    - label: Archives and Records Management
-      value: archives
-    - label: Arts & Culture
-      value: arts
-    - label: Assessing Department
-      value: assessing
-    - label: Assistant Director of Operations, Consumer Affairs and Licensing
-      value: consumer_asst
-    - label: Boston 311
-      value: "311"
-    - label: Boston Centers for Youth and Families
-      value: youth
-    - label: Boston EMS
-      value: ems
-    - label: Boston Fire Department
-      value: fire
-    - label: Boston Planning & Development Agency
-      value: planning
-    - label: Boston Police Department
-      value: police
-    - label: Boston Public Health Commission
-      value: health_commission
-    - label: Boston Public Library
-      value: library
-    - label: Boston Public Schools
-      value: schools
-    - label: Boston Transportation Department
-      value: transportation
-    - label: Boston Water and Sewer Commission
-      value: water
-    - label: BPDA Management Information Systems
-      value: bpda
-    - label: City Clerk
-      value: clerk
-    - label: City of Boston Archaeology Program
-      value: archaeology
-    - label: Civic engagement
-      value: civic_engagement
-    - label: Consumer Affairs & Licensing Department
-      value: consumer
-    - label: Data Literacy Librarian, Boston Open Data
-      value: data_literacy
     - label: Department of Innovation and Technology
-      value: innovation
+      value: Department of Innovation and Technology
+    - label: Administration & Finance
+      value: Administration and Finance
+    - label: Archives and Records Management
+      value: Archives and Records Management
+    - label: Arts & Culture
+      value: Arts and Culture
+    - label: Assessing Department
+      value: Assessing Department
+    - label: Assistant Director of Operations, Consumer Affairs and Licensing
+      value: Assistant Director of Operations, Consumer Affairs and Licensing
+    - label: Boston 311
+      value: Boston 311
+    - label: Boston Centers for Youth and Families
+      value: Boston Centers for Youth and Families
+    - label: Boston EMS
+      value: Boston EMS
+    - label: Boston Fire Department
+      value: Boston Fire Department
+    - label: Boston Planning & Development Agency
+      value: Boston Planning and Development Agency
+    - label: Boston Police Department
+      value: Boston Police Department
+    - label: Boston Public Health Commission
+      value: Boston Public Health Commission
+    - label: Boston Public Library
+      value: Boston Public Library
+    - label: Boston Public Schools
+      value: Boston Public Schools
+    - label: Boston Transportation Department
+      value: Boston Transportation Department
+    - label: Boston Water and Sewer Commission
+      value: Boston Water and Sewer Commission
+    - label: BPDA Management Information Systems
+      value: BPDA Management Information Systems
+    - label: City Clerk
+      value: City Clerk
+    - label: City of Boston Archaeology Program
+      value: City of Boston Archaeology Program
+    - label: Civic engagement
+      value: Civic engagement
+    - label: Consumer Affairs & Licensing Department
+      value: Consumer Affairs and Licensing Department
+    - label: Data Literacy Librarian, Boston Open Data
+      value: Data Literacy Librarian, Boston Open Data
     - label: Department of Neighborhood Development
-      value: neighborhood_development
+      value: Department of Neighborhood Development
     - label: Deputy Director, Real Estate Management and Sales
-      value: real_estate
+      value: Deputy Director, Real Estate Management and Sales
     - label: Director of Publicity, Inspectional Services Department
-      value: inspectional_publicity
-    - label: Director of Publicity, ISD
-      value: publicity
+      value: Director of Publicity, Inspectional Services Department
     - label: Director of Tax Policy & Communications
-      value: tax_policy
+      value: Director of Tax Policy and Communications
     - label: DoIT Data & Analytics
-      value: doit_data
+      value: DoIT Data and Analytics
     - label: Economic Development
-      value: economic
+      value: Economic Development
     - label: Education
-      value: education
+      value: Education
     - label: Energy Manager, Environment Department
-      value: energy_manager
+      value: Energy Manager, Environment Department
     - label: Environment, energy, and open space
-      value: environment_energy
+      value: Environment, energy, and open space
     - label: Environment Department
-      value: environment
+      value: Environment Department
     - label: Fair Housing & Equity
-      value: fair_housing
+      value: Fair Housing and Equity
     - label: GIS Team
-      value: gis
+      value: GIS Team
     - label: Health and human services
-      value: health
+      value: Health and human services
     - label: Housing & Neighborhood Development
-      value: housing
+      value: Housing and Neighborhood Development
     - label: Information and Technology Cabinet
-      value: it_cabinet
+      value: Information and Technology Cabinet
     - label: Inspectional Services Department
-      value: inspectional
+      value: Inspectional Services Department
     - label: Intergovernmental Relations
-      value: intergovernmental_relations
+      value: Intergovernmental Relations
     - label: Manager, DoIT GIS Team
-      value: doit_gis
+      value: Manager, DoIT GIS Team
     - label: Manager, Procurement Systems
-      value: procurement
+      value: Manager, Procurement Systems
     - label: Mayor's Office for Immigrant Advancement
-      value: immigrant_advancement
+      value: Mayor's Office for Immigrant Advancement
     - label: Mayor's Office of Emergency Management Services
-      value: emergency_management
+      value: Mayor's Office of Emergency Management Services
     - label: Mayor
-      value: mayor
+      value: Mayor
     - label: Neighborhood Services
-      value: neighborhood
+      value: Neighborhood Services
     - label: Non-mayoral departments
-      value: non_mayoral
+      value: Non-mayoral departments
     - label: Office/Finance Manager, City of Boston Environment
-      value: environment_manager
+      value: Office/Finance Manager, City of Boston Environment
     - label: Office of Arts & Culture
-      value: arts_office
+      value: Office of Arts and Culture
     - label: Office of Budget Management
-      value: budget
+      value: Office of Budget Management
     - label: Office of Economic Development
-      value: economic_office
+      value: Office of Economic Development
     - label: Office of Human Resources
-      value: hr
+      value: Office of Human Resources
     - label: Office of the Parking Clerk
-      value: parking
+      value: Office of the Parking Clerk
     - label: Operations
-      value: operations
+      value: Operations
     - label: Property Management
-      value: property
+      value: Property Management
     - label: Public safety
-      value: safety
+      value: Public safety
     - label: Purchasing Division
-      value: purchasing
+      value: Purchasing Division
     - label: Senior Systems and Network Operations Specialist, Boston Fire Department
-      value: fire_operations
+      value: Senior Systems and Network Operations Specialist, Boston Fire Department
     - label: Streets, transportation, and sanitation
-      value: streets
+      value: Streets, transportation, and sanitation
     - label: System Administrator, Office of Budget Management
-      value: budget_admin
+      value: System Administrator, Office of Budget Management
     - label: Veterans Services
-      value: veterans
+      value: Veterans Services
 
 - preset_name: source_choices
   values:
     choices:
     - label: Airport Statistics, Massport
-      value: airport_statistics
+      value: Airport Statistics, Massport
     - label: ArcGIS REST Services
-      value: arcgis_rest
+      value: ArcGIS REST Services
     - label: Boston EMS electronic patient care report system
-      value: ems_patient_care_report_system
+      value: Boston EMS electronic patient care report system
     - label: Boston Police Department Crime Statistics Feed
-      value: police_crime_stats_feed
+      value: Boston Police Department Crime Statistics Feed
     - label: Boston Public Library enterprise integrated library system (ILS)
-      value: integrated_library_system
+      value: Boston Public Library enterprise integrated library system
     - label: Bostracks Enfocus
-      value: bostracks_enfocus
+      value: Bostracks Enfocus
     - label: BPDA (Boston Planning & Development Agency) contract compliance database
-      value: bpda_contract_compliance_db
-    - label: BPDA (Contract
-      value: bpda_contract
+      value: BPDA contract compliance database
+    - label: BPDA Contract
+      value: BPDA Contract
     - label: BRA pipeline database
-      value: bra_pipeline_db
+      value: BRA pipeline database
     - label: City Clerk documents and assigned docket numbers
-      value: city_clerk_documents
+      value: City Clerk documents and assigned docket numbers
     - label: City Constituent Relationship Management (CRM) System
-      value: constituent_relationship_management_system
+      value: City Constituent Relationship Management System
     - label: City of Boston document management system
-      value: document_management_system
+      value: City of Boston document management system
     - label: City of Boston Enterprise Resource Planning System, Financials
-      value: resource_planning_system_financials
+      value: City of Boston Enterprise Resource Planning System, Financials
     - label: City of Boston Enterprise Resource Planning System, Human Capital Management (HCM)
-      value: resource_planning_system_human_capital
+      value: City of Boston Enterprise Resource Planning System, Human Capital Management
     - label: City of Boston Voice over IP (VOIP) System
-      value: voip_system
+      value: City of Boston Voice over IP System
     - label: City wide Budgeting and Forecasting Application
-      value: budgeting_and_forecasting_app
+      value: City wide Budgeting and Forecasting Application
     - label: City wide Enterprise Energy Management System
-      value: energy_management_system
+      value: City wide Enterprise Energy Management System
     - label: City wide Enterprise Permitting and Licensing Software
-      value: permitting_and_licensing_software
+      value: City wide Enterprise Permitting and Licensing Software
     - label: Computer aided dispatch system (CAD)
-      value: computer_aided_dispatch_system
+      value: Computer aided dispatch system
     - label: Department of Neighborhood Development Data Server
-      value: neighborhood_development_server
+      value: Department of Neighborhood Development Data Server
     - label: ENERGY STAR Portfolio Manager®
-      value: energy_star_portfolio_manager
+      value: ENERGY STAR Portfolio Manager
     - label: Internal
-      value: internal
+      value: Internal
     - label: IPS Data Management System (DMS)
-      value: ips_data_management_system
+      value: IPS Data Management System
     - label: Labor Market Information, The Official Website of the Executive Office of Labor and Workforce Development (EOLWD)
-      value: labor_market_info
+      value: Labor Market Information, Executive Office of Labor and Workforce Development
     - label: Massachusetts Artifact Tracking System (MATS)
-      value: massachusetts_artifact_tracking_system
+      value: Massachusetts Artifact Tracking System
