@@ -45,6 +45,8 @@ presets:
       value: Boston Public Library
     - label: Boston Public Schools
       value: Boston Public Schools
+    - label: Boston Residents Jobs Policy
+      value: Boston Residents Jobs Policy
     - label: Boston Transportation Department
       value: Boston Transportation Department
     - label: Boston Water and Sewer Commission
@@ -87,6 +89,8 @@ presets:
       value: GIS Team
     - label: Health and human services
       value: Health and human services
+    - label: Health Division, Inspectional Services Department
+      value: Health Division, Inspectional Services Department
     - label: Housing & Neighborhood Development
       value: Housing and Neighborhood Development
     - label: Information and Technology Cabinet
@@ -127,6 +131,8 @@ presets:
       value: Property Management
     - label: Public safety
       value: Public safety
+    - label: Public Works Department
+      value: Public Works Department
     - label: Purchasing Division
       value: Purchasing Division
     - label: Senior Systems and Network Operations Specialist, Boston Fire Department
