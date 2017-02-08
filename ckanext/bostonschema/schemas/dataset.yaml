@@ -167,6 +167,7 @@ dataset_fields:
   # copied from select preset because we're using preset for controlled list
   form_snippet: select.html
   display_snippet: select.html
+  required: True
   validators: scheming_required scheming_choices
   # only show some government entities
   form_restrict_choices_to:
