@@ -55,10 +55,14 @@ presets:
       value: BPDA Management Information Systems
     - label: City Clerk
       value: City Clerk
+    - label: City of Boston
+      value: City of Boston
     - label: City of Boston Archaeology Program
       value: City of Boston Archaeology Program
     - label: Civic engagement
       value: Civic engagement
+    - label: Climate and Buildings Program Manager
+      value: Climate and Buildings Program Manager
     - label: Consumer Affairs & Licensing Department
       value: Consumer Affairs and Licensing Department
     - label: Data Literacy Librarian, Boston Open Data
@@ -77,6 +81,8 @@ presets:
       value: Economic Development
     - label: Education
       value: Education
+    - label: Election Department
+      value: Election Department
     - label: Energy Manager, Environment Department
       value: Energy Manager, Environment Department
     - label: Environment, energy, and open space
@@ -85,6 +91,8 @@ presets:
       value: Environment Department
     - label: Fair Housing & Equity
       value: Fair Housing and Equity
+    - label: Finance, budget, & administration
+      value: Finance, budget, and administration
     - label: GIS Team
       value: GIS Team
     - label: Health and human services
@@ -107,8 +115,8 @@ presets:
       value: Mayor's Office for Immigrant Advancement
     - label: Mayor's Office of Emergency Management Services
       value: Mayor's Office of Emergency Management Services
-    - label: Mayor
-      value: Mayor
+    - label: Mayor's Office
+      value: Mayor's Office
     - label: Neighborhood Services
       value: Neighborhood Services
     - label: Non-mayoral departments
@@ -129,12 +137,18 @@ presets:
       value: Operations
     - label: Property Management
       value: Property Management
+    - label: Public Information Officer, Boston Fire Department
+      value: Public Information Officer, Boston Fire Department
     - label: Public safety
       value: Public safety
     - label: Public Works Department
       value: Public Works Department
+    - label: Public Works Department Construction Management
+      value: Public Works Department Construction Management
     - label: Purchasing Division
       value: Purchasing Division
+    - label: Senior Data Processing Systems Analyst, Public Works
+      value: Senior Data Processing Systems Analyst, Public Works
     - label: Senior Systems and Network Operations Specialist, Boston Fire Department
       value: Senior Systems and Network Operations Specialist, Boston Fire Department
     - label: Streets, transportation, and sanitation
