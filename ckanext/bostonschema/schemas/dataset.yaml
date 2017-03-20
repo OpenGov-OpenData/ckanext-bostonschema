@@ -498,6 +498,6 @@ resource_fields:
   preset: resource_format_autocomplete
 
 ## "Access URL"
-- field_name: access_url
-  label: Access URL
-  display_snippet: link.html
+# - field_name: access_url
+#   label: Access URL
+#   display_snippet: link.html
