@@ -177,8 +177,6 @@ presets:
       value: BPDA contract compliance database
     - label: BRA pipeline database
       value: BRA pipeline database
-    - label: BRJP Manager
-      value: BRJP Manager
     - label: City Clerk documents and assigned docket numbers
       value: City Clerk documents and assigned docket numbers
     - label: City Constituent Relationship Management (CRM) System
