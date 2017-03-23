@@ -1,5 +1,6 @@
 
 *.pyc
+.DS_Store
 ckanext_bostontheme.egg-info/*
 build/*
 dist/*
