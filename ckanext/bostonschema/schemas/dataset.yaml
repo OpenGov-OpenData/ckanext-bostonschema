@@ -274,6 +274,8 @@ dataset_fields:
     value: city_services
   - label: Economic Development
     value: economic_development
+  - label: Education
+    value: education
   - label: Environment
     value: environment
   - label: Facilities
@@ -370,6 +372,7 @@ dataset_fields:
   - Data Literacy Librarian, Boston Open Data
   - Deputy Director, Real Estate Management and Sales
   - Director of Publicity, Inspectional Services Department
+  - Director of Strategic Initiatives for the Mayor's Education Cabinet
   - Director of Tax Policy and Communications
   - DoIT Data and Analytics
   - Election Department
