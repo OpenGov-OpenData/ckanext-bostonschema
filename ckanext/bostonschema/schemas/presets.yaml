@@ -200,7 +200,7 @@ presets:
     - label: Citywide Enterprise Energy Management System
       value: Citywide Enterprise Energy Management System
     - label: Citywide enterprise permitting and licensing software
-      value: Citywide Enterprise permitting and licensing software
+      value: Citywide enterprise permitting and licensing software
     - label: Computer Aided Dispatch system (CAD)
       value: Computer Aided Dispatch system
     - label: Department of Neighborhood Development data server
