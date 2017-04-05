@@ -75,6 +75,8 @@ presets:
       value: Deputy Director, Real Estate Management and Sales
     - label: Director of Publicity, Inspectional Services Department
       value: Director of Publicity, Inspectional Services Department
+    - label: Director of Strategic Initiatives for the Mayor's Education Cabinet
+      value: Director of Strategic Initiatives for the Mayor's Education Cabinet
     - label: Director of Tax Policy & Communications
       value: Director of Tax Policy and Communications
     - label: DoIT Data & Analytics
@@ -169,10 +171,10 @@ presets:
       value: ArcGIS REST Services
     - label: Boston EMS electronic patient care report system
       value: Boston EMS electronic patient care report system
-    - label: Boston Police Department Crime Statistics Feed
-      value: Boston Police Department Crime Statistics Feed
-    - label: Boston Public Library enterprise integrated library system (ILS)
-      value: Boston Public Library enterprise integrated library system
+    - label: Boston Police Department crime statistics feed
+      value: Boston Police Department crime statistics feed
+    - label: Boston Public Library enterprise Integrated Library System (ILS)
+      value: Boston Public Library enterprise Integrated Library System
     - label: Bostracks Enfocus
       value: Bostracks Enfocus
     - label: BPDA (Boston Planning & Development Agency) contract compliance database
@@ -181,8 +183,8 @@ presets:
       value: BRA pipeline database
     - label: City Clerk documents and assigned docket numbers
       value: City Clerk documents and assigned docket numbers
-    - label: City Constituent Relationship Management (CRM) System
-      value: City Constituent Relationship Management System
+    - label: City Constituent Relationship Management (CRM) system
+      value: City Constituent Relationship Management system
     - label: City of Boston document management system
       value: City of Boston document management system
     - label: City of Boston Enterprise Resource Planning System, Financials
@@ -191,18 +193,18 @@ presets:
       value: City of Boston Enterprise Resource Planning System, Human Capital Management
     - label: City of Boston Utility Coordination System
       value: City of Boston Utility Coordination System
-    - label: City of Boston Voice over IP (VOIP) System
+    - label: City of Boston Voice over IP (VoIP) System
       value: City of Boston Voice over IP System
-    - label: Citywide Budgeting and Forecasting Application
-      value: Citywide Budgeting and Forecasting Application
+    - label: Citywide budgeting and forecasting application
+      value: Citywide budgeting and forecasting application
     - label: Citywide Enterprise Energy Management System
       value: Citywide Enterprise Energy Management System
-    - label: Citywide Enterprise Permitting and Licensing Software
-      value: Citywide Enterprise Permitting and Licensing Software
-    - label: Computer aided dispatch system (CAD)
-      value: Computer aided dispatch system
-    - label: Department of Neighborhood Development Data Server
-      value: Department of Neighborhood Development Data Server
+    - label: Citywide enterprise permitting and licensing software
+      value: Citywide enterprise permitting and licensing software
+    - label: Computer Aided Dispatch system (CAD)
+      value: Computer Aided Dispatch system
+    - label: Department of Neighborhood Development data server
+      value: Department of Neighborhood Development data server
     - label: ENERGY STAR Portfolio Manager®
       value: ENERGY STAR Portfolio Manager
     - label: Internal
@@ -217,8 +219,8 @@ presets:
       value: myParkfolio
     - label: Park Boston
       value: Park Boston
-    - label: Parking Violation Processing System
-      value: Parking Violation Processing System
+    - label: Parking violation processing system
+      value: Parking violation processing system
     - label: Street and Address Management (SAM) system
       value: Street and Address Management system
     - label: Web based fire incident reporting system
