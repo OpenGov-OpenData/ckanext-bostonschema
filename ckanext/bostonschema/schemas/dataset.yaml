@@ -48,8 +48,8 @@ dataset_fields:
     value: image
   - label: Charts
     value: charts
-  - label: Map
-    value: map
+  - label: Geospatial
+    value: geospatial
   - label: Calendar
     value: calendar
   - label: Forms
