@@ -133,6 +133,7 @@ dataset_fields:
 #  - Office of Arts and Culture
 #  - Office of Budget Management
 #  - Office of Economic Development
+#  - Office of Fair Housing and Equity
 #  - Office of Human Resources
 #  - Office of the Parking Clerk
 #  - Property Management
@@ -276,6 +277,8 @@ dataset_fields:
     value: economic_development
   - label: Education
     value: education
+  - label: Employment
+    value: employment
   - label: Environment
     value: environment
   - label: Facilities
@@ -391,6 +394,7 @@ dataset_fields:
   - Office/Finance Manager, City of Boston Environment
   - Office of Arts and Culture
   - Office of Economic Development
+  - Office of Fair Housing and Equity
   - Office of Human Resources
   - Office of the Parking Clerk
   - Property Management
