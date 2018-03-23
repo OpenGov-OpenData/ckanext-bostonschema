@@ -271,6 +271,8 @@ dataset_fields:
     value: archives
   - label: Arts and Culture
     value: arts_and_culture
+  - label: Budget
+    value: budget
   - label: City services
     value: city_services
   - label: Economic Development
@@ -393,6 +395,7 @@ dataset_fields:
   - Neighborhood Services
   - Office/Finance Manager, City of Boston Environment
   - Office of Arts and Culture
+  - Office of Budget Management
   - Office of Economic Development
   - Office of Fair Housing and Equity
   - Office of Human Resources
