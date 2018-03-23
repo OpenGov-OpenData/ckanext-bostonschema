@@ -140,6 +140,7 @@ dataset_fields:
 #  - Public Works Department
 #  - Purchasing Division
 #  - Veterans Services
+#  - Vision Zero
 
 ## "source"
 #  multiple select from government entiy list
@@ -408,6 +409,7 @@ dataset_fields:
   - Senior Systems and Network Operations Specialist, Boston Fire Department
   - System Administrator, Office of Budget Management
   - Veterans Services
+  - Vision Zero Boston Program
 
 ## "contactPointEmail"
 - field_name: contact_point_email
