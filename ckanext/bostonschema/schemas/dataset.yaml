@@ -91,57 +91,6 @@ dataset_fields:
   label: Provider
   preset: dataset_organization
 
-## provider
-#  select from government entity list
-#- field_name: provider
-#  label: Provider
-#  preset: government_entity_choices
-#  # copied from select preset because we're using preset for controlled list
-#  form_snippet: select.html
-#  display_snippet: select.html
-#  validators: scheming_required scheming_choices
-#  required: True
-#  # only show some government entities
-#  form_restrict_choices_to:
-#  - Department of Innovation and Technology
-#  - Archives and Records Management
-#  - Assessing Department
-#  - Boston 311
-#  - Boston Centers for Youth and Families
-#  - Boston EMS
-#  - Boston Fire Department
-#  - Boston Planning and Development Agency
-#  - Boston Police Department
-#  - Boston Public Library
-#  - Boston Residents Jobs Policy
-#  - Boston Transportation Department
-#  - Boston Water and Sewer Commission
-#  - City of Boston Archaeology Program
-#  - Consumer Affairs and Licensing Department
-#  - Department of Neighborhood Development
-#  - DoIT Data and Analytics
-#  - Economic Development
-#  - Environment Department
-#  - Fair Housing and Equity
-#  - GIS Team
-#  - Health Division, Inspectional Services Department
-#  - Inspectional Services Department
-#  - Intergovernmental Relations
-#  - Mayor's Office for Immigrant Advancement
-#  - Mayor's Office of Emergency Management Services
-#  - Neighborhood Services
-#  - Office of Arts and Culture
-#  - Office of Budget Management
-#  - Office of Economic Development
-#  - Office of Fair Housing and Equity
-#  - Office of Human Resources
-#  - Office of the Parking Clerk
-#  - Property Management
-#  - Public Works Department
-#  - Purchasing Division
-#  - Veterans Services
-#  - Vision Zero Boston Program
-
 ## "source"
 #  multiple select from government entiy list
 - field_name: source
