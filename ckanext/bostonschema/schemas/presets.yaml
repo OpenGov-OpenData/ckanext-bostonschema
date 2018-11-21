@@ -131,14 +131,14 @@ presets:
       value: Office of Arts and Culture
     - label: Office of Budget Management
       value: Office of Budget Management
-    - label: Office of City Clerk
-      value: Office of City Clerk
     - label: Office of Economic Development
       value: Office of Economic Development
     - label: Office of Fair Housing and Equity
       value: Office of Fair Housing and Equity
     - label: Office of Human Resources
       value: Office of Human Resources
+    - label: Office of the City Clerk
+      value: Office of the City Clerk
     - label: Office of the Parking Clerk
       value: Office of the Parking Clerk
     - label: Operations
