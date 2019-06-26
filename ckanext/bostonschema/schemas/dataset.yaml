@@ -124,8 +124,10 @@ dataset_fields:
   form_restrict_choices_to:
   - Department of Innovation and Technology
   - Assessing Department
+  - Boston Maps
   - Boston Water and Sewer Commission
   - City of Boston
+  - External Organization
 
 ## "classification"
 #  Exempt/Public

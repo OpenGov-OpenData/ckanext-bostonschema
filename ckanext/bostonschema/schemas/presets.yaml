@@ -35,6 +35,8 @@ presets:
       value: Boston EMS
     - label: Boston Fire Department
       value: Boston Fire Department
+    - label: Boston Maps
+      value: Boston Maps
     - label: Boston Planning & Development Agency
       value: Boston Planning and Development Agency
     - label: Boston Police Department
@@ -93,6 +95,8 @@ presets:
       value: Environment, energy, and open space
     - label: Environment Department
       value: Environment Department
+    - label: External Organization
+      value: External Organization
     - label: Fair Housing & Equity
       value: Fair Housing and Equity
     - label: Finance, budget, & administration
