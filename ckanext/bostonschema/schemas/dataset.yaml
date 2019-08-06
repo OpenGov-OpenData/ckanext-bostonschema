@@ -311,6 +311,7 @@ dataset_fields:
   # only show some government entities
   form_restrict_choices_to:
   - Department of Innovation and Technology
+  - Analytics Team
   - Archives and Records Management
   - Assessing Department
   - Assistant Director of Operations, Consumer Affairs and Licensing
@@ -438,7 +439,7 @@ resource_fields:
 - field_name: name_translated
   label: Title
   preset: fluent_text
-  form_placeholder: eg. January 2011 Gold Prices
+  form_placeholder: eg. January 2015 Gold Prices
 
 ## "description"
 #  core CKAN field

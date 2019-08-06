@@ -19,6 +19,8 @@ presets:
       value: Department of Innovation and Technology
     - label: Administration & Finance
       value: Administration and Finance
+    - label: Analytics Team
+      value: Analytics Team
     - label: Archives and Records Management
       value: Archives and Records Management
     - label: Arts & Culture
