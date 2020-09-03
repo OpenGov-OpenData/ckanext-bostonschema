@@ -318,6 +318,7 @@ dataset_fields:
   - Boston 311
   - Boston Centers for Youth and Families
   - Boston EMS
+  - Boston Licensing Board
   - Boston Planning and Development Agency
   - Boston Police Department
   - Boston Public Library
@@ -327,6 +328,7 @@ dataset_fields:
   - BRJP Manager
   - City of Boston Archaeology Program
   - Climate and Buildings Program Manager
+  - Consumer Licensing and Affairs
   - Data Literacy Librarian, Boston Open Data
   - Deputy Director, Real Estate Management and Sales
   - Director of Publicity, Inspectional Services Department

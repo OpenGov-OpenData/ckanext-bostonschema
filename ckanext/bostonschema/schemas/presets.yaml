@@ -39,6 +39,8 @@ presets:
       value: Boston Fire Department
     - label: Boston Maps
       value: Boston Maps
+    - label: Boston Licensing Board
+      value: Boston Licensing Board
     - label: Boston Planning & Development Agency
       value: Boston Planning and Development Agency
     - label: Boston Police Department
@@ -71,6 +73,8 @@ presets:
       value: Climate and Buildings Program Manager
     - label: Consumer Affairs & Licensing Department
       value: Consumer Affairs and Licensing Department
+    - label: Consumer Licensing and Affairs
+      value: Consumer Licensing and Affairs
     - label: Data Literacy Librarian, Boston Open Data
       value: Data Literacy Librarian, Boston Open Data
     - label: Department of Neighborhood Development
