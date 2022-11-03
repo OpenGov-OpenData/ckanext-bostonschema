@@ -32,7 +32,7 @@ ckanext.bostonschema:schemas/dataset.yaml
 
     # IPackageController
     def after_create(self, context, pkg_dict):
-        if 'title_translated' in pkg_dict and 'title' not in pkg_dict:
+        if 'title_translated' in pkg_dict:
             title_translated = fluent_text_output(pkg_dict.get('title_translated'))
             if title_translated.get('en'):
                 title = title_translated.get('en')
@@ -41,7 +41,7 @@ ckanext.bostonschema:schemas/dataset.yaml
             if title:
                 pkg_dict['title'] = title
 
-        if 'notes_translated' in pkg_dict and 'notes' not in pkg_dict:
+        if 'notes_translated' in pkg_dict:
             notes_translated = fluent_text_output(pkg_dict.get('notes_translated'))
             if notes_translated.get('en'):
                 notes = notes_translated.get('en')
@@ -52,7 +52,7 @@ ckanext.bostonschema:schemas/dataset.yaml
         return pkg_dict
 
     def after_update(self, context, pkg_dict):
-        if 'title_translated' in pkg_dict and 'title' not in pkg_dict:
+        if 'title_translated' in pkg_dict:
             title_translated = fluent_text_output(pkg_dict.get('title_translated'))
             if title_translated.get('en'):
                 # Default to en if available
@@ -63,7 +63,7 @@ ckanext.bostonschema:schemas/dataset.yaml
             if title:
                 pkg_dict['title'] = title
 
-        if 'notes_translated' in pkg_dict and 'notes' not in pkg_dict:
+        if 'notes_translated' in pkg_dict:
             notes_translated = fluent_text_output(pkg_dict.get('notes_translated'))
             if notes_translated.get('en'):
                 notes = notes_translated.get('en')
@@ -75,7 +75,7 @@ ckanext.bostonschema:schemas/dataset.yaml
 
     # IResourceController
     def before_create(self, context, resource):
-        if 'name_translated' in resource and 'name' not in resource:
+        if 'name_translated' in resource:
             name_translated = fluent_text_output(resource.get('name_translated'))
             if name_translated.get('en'):
                 name = name_translated.get('en')
@@ -83,7 +83,7 @@ ckanext.bostonschema:schemas/dataset.yaml
                 name = scheming_language_text(name_translated, config.get('ckan.locale_default', 'en'))
             if name:
                 resource['name'] = name
-        if 'description_translated' in resource and 'description' not in resource:
+        if 'description_translated' in resource:
             description_translated = fluent_text_output(resource.get('description_translated'))
             if description_translated.get('en'):
                 description = description_translated.get('en')
@@ -94,7 +94,7 @@ ckanext.bostonschema:schemas/dataset.yaml
         return resource
 
     def before_update(self, context, current, resource):
-        if 'name_translated' in resource and 'name' not in resource:
+        if 'name_translated' in resource:
             name_translated = fluent_text_output(resource.get('name_translated'))
             if name_translated.get('en'):
                 name = name_translated.get('en')
@@ -102,7 +102,7 @@ ckanext.bostonschema:schemas/dataset.yaml
                 name = scheming_language_text(name_translated, config.get('ckan.locale_default', 'en'))
             if name:
                 resource['name'] = name
-        if 'description_translated' in resource and 'description' not in resource:
+        if 'description_translated' in resource:
             description_translated = fluent_text_output(resource.get('description_translated'))
             if description_translated.get('en'):
                 description = description_translated.get('en')
