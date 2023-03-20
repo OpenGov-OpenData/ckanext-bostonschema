@@ -255,6 +255,8 @@ dataset_fields:
     value: operations
   - label: Parking
     value: parking
+  - label: Parks and Recreation
+    value: parks_and_recreation
   - label: Performance
     value: performance
   - label: Permitting
@@ -358,6 +360,7 @@ dataset_fields:
   - Office of Human Resources
   - Office of the City Clerk
   - Office of the Parking Clerk
+  - Parks and Recreation
   - Property Management
   - Public Information Officer, Boston Fire Department
   - Public Works Department
