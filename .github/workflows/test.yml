@@ -19,7 +19,7 @@ jobs:
     needs: lint
     strategy:
       matrix:
-        ckan-version: [2.9, 2.8, 2.7]
+        ckan-version: [2.9]
       fail-fast: false
 
     name: CKAN ${{ matrix.ckan-version }}
@@ -65,4 +65,16 @@ jobs:
         run: |
           paster --plugin=ckan db init -c test.ini
       - name: Run tests
-        run: pytest --ckan-ini=test.ini --cov=ckanext.bostonschema --disable-warnings ckanext/bostonschema/tests
+        run: pytest --ckan-ini=test.ini --cov=ckanext.bostonschema --cov-report xml:coverage.xml--disable-warnings ckanext/bostonschema/tests
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        with:
+          args: >
+            -Dsonar.projectKey=ckanext-bostonschema
+            -Dsonar.sources=ckanext/bostonschema
+            -Dsonar.tests=ckanext/bostonschema/tests
+            -Dsonar.exclusions=ckanext/bostonschema/tests/**
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_API_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_EXTERNAL_URL }}
