@@ -90,6 +90,7 @@ dataset_fields:
 - field_name: owner_org
   label: Provider
   preset: dataset_organization
+  display_snippet: organization.html
 
 ## "source"
 #  multiple select from government entiy list
