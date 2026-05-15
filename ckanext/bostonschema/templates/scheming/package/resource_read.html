@@ -1,14 +1,14 @@
 {% extends "package/resource_read.html" %}
 
 {%- set exclude_fields = [
-    'name',
-    'name_translated',
-    'description',
-    'description_translated',
-    'url',
-    'format',
-    'data_dictionary'
-    ] -%}
+  'name',
+  'name_translated',
+  'description',
+  'description_translated',
+  'url',
+  'format',
+  'data_dictionary'
+  ] -%}
 {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
 
 {% block resource_additional_information_inner %}
@@ -26,14 +26,16 @@
               <th scope="col">{{ _('Description') }}</th>
             </tr>
           </thead>
-          {% for field in ddict %}
-            <tr {% if loop.index > 10 %}class="toggle-more"{% endif %}>
-              <td>{{ field.id }}</td>
-              <td>{{ field.type }}</td>
-              <td>{{ field.get('info', {}).label }}</td>
-              <td>{{ h.render_markdown(field.get('info', {}).notes) }}</td>
-            </tr>
-          {% endfor %}
+          <tbody>
+            {% for field in ddict %}
+              <tr {% if loop.index > 10 %}class="toggle-more"{% endif %}>
+                <td>{{ field.id }}</td>
+                <td>{{ field.type }}</td>
+                <td>{{ field.get('info', {}).label }}</td>
+                <td>{{ h.render_markdown(field.get('info', {}).notes) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
         </table>
       </div>
     {% endif %}
