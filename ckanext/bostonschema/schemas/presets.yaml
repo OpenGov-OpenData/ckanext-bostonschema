@@ -41,8 +41,6 @@ presets:
       value: Boston Maps
     - label: Boston Licensing Board
       value: Boston Licensing Board
-    - label: Boston Planning & Development Agency
-      value: Boston Planning and Development Agency
     - label: Boston Police Department
       value: Boston Police Department
     - label: Boston Public Health Commission
@@ -159,6 +157,8 @@ presets:
       value: Operations
     - label: Parks and Recreation
       value: Parks and Recreation
+    - label: Planning Department
+      value: Planning Department
     - label: Property Management
       value: Property Management
     - label: Public Information Officer, Boston Fire Department

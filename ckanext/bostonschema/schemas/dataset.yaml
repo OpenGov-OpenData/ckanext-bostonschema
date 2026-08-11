@@ -190,6 +190,10 @@ dataset_fields:
     value: R/P2Y
   - label: Triennial
     value: R/P3Y
+  - label: As needed
+    value: As needed
+  - label: No longer updated
+    value: No longer updated
 
 ## "identifier"
 #  Not including here. core "id" field is better than an auto-incrementing field
@@ -322,7 +326,6 @@ dataset_fields:
   - Boston Centers for Youth and Families
   - Boston EMS
   - Boston Licensing Board
-  - Boston Planning and Development Agency
   - Boston Police Department
   - Boston Public Library
   - Boston Transportation Department
@@ -362,6 +365,7 @@ dataset_fields:
   - Office of the City Clerk
   - Office of the Parking Clerk
   - Parks and Recreation
+  - Planning Department
   - Property Management
   - Public Information Officer, Boston Fire Department
   - Public Works Department
