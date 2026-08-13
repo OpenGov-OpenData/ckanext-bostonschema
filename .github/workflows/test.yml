@@ -4,10 +4,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: '3.9'
       - name: Install requirements
         run: pip install flake8 pycodestyle
       - name: Check syntax
@@ -19,16 +19,20 @@ jobs:
     needs: lint
     strategy:
       matrix:
-        ckan-version: [2.9]
+        include:
+          - ckan-version: "2.9"
+            ckan-image: "ckan/ckan-dev:2.9-py3.9"
+            solr-version: "8"
       fail-fast: false
 
     name: CKAN ${{ matrix.ckan-version }}
     runs-on: ubuntu-latest
     container:
-      image: openknowledge/ckan-dev:${{ matrix.ckan-version }}
+      image: ${{ matrix.ckan-image }}
+      options: --user root
     services:
       solr:
-        image: ckan/ckan-solr:${{ matrix.ckan-version }}
+        image: ckan/ckan-solr:${{ matrix.ckan-version }}-solr${{ matrix.solr-version }}
       postgres:
         image: ckan/ckan-postgres-dev:${{ matrix.ckan-version }}
         env:
@@ -46,16 +50,19 @@ jobs:
       CKAN_REDIS_URL: redis://redis:6379/1
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install requirements
         run: |
           pip install -r requirements.txt
           pip install -r dev-requirements.txt
           pip install -e git+https://github.com/ckan/ckanext-scheming.git#egg=ckanext-scheming
-          pip install -e git+https://github.com/ckan/ckanext-fluent.git#egg=ckanext-fluent
+          pip install -e git+https://github.com/ckan/ckanext-fluent.git@e882c241c57f80ea4e4f1d72f07f2dd64588310e#egg=ckanext-fluent
           pip install -e .
           # Replace default path to CKAN core config file with the one on the container
           sed -i -e 's/use = config:.*/use = config:\/srv\/app\/src\/ckan\/test-core.ini/' test.ini
+          # Install unzip and gnupg for SonarQube Scan
+          apt-get update
+          apt-get install -y unzip gnupg
       - name: Setup extension (CKAN >= 2.9)
         if: ${{ matrix.ckan-version != '2.7' && matrix.ckan-version != '2.8' }}
         run: |
